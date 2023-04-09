@@ -1,23 +1,21 @@
-# speech recongition
 from vosk    import Model, KaldiRecognizer
 from pyaudio import PyAudio, paInt16
-# text to speech
+
 from pyttsx3 import init
-# fuzzy speech supression
+
 from fuzzywuzzy import fuzz
 
+import core.const as const
 
 
-# text to speech
+
 tts = init()
 
-# fuzzy speech suppresion
 ratio = fuzz.ratio
 tokenRatio = fuzz.token_set_ratio
 
-# speech to text
 print('Initializing speech recognizer (Vosk)'.center(50, '='))
-recognizer = KaldiRecognizer(Model('./core/vosk-model-small-en-us-0.15'), 16000)
+recognizer = KaldiRecognizer(Model('./voice/vosk-model-small-en-us-0.15'), 16000)
 print('Speech recognizer initialized'.center(50, '='))
 
 mic = PyAudio()
