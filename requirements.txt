@@ -1,0 +1,7 @@
+# I/O dependencies
+fuzzywuzzy
+pyttsx3
+vosk
+# database
+wikipedia
+# start microsoft.windows.camera: 
