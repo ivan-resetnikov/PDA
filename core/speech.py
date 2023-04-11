@@ -14,9 +14,9 @@ tts = init()
 ratio = fuzz.ratio
 tokenRatio = fuzz.token_set_ratio
 
-print('Initializing speech recognizer (Vosk)'.center(50, '='))
+print(' Initializing speech recognizer (Vosk) '.center(50, '='))
 recognizer = KaldiRecognizer(Model('./voice/vosk-model-small-en-us-0.15'), 16000)
-print('Speech recognizer initialized'.center(50, '='))
+print(' Speech recognizer initialized '.center(50, '='))
 
 mic = PyAudio()
 stt = mic.open(format=paInt16, channels=1, rate=16000, input=True, frames_per_buffer=8192)

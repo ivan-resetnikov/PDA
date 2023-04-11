@@ -7,4 +7,4 @@ config.read('config.cfg')
 
 
 name = config['settings']['name']
-voiceSex = config['voice']['voic_sex']
+sex  = config['voice']['sex']
